@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/tozd/docker/runit:ubuntu-bionic
+FROM registry.gitlab.com/tozd/docker/runit:ubuntu-jammy
 
 VOLUME /var/log/nullmailer
 VOLUME /var/spool/nullmailer
