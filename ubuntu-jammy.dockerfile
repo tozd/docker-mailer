@@ -1,10 +1,10 @@
 FROM registry.gitlab.com/tozd/docker/runit:ubuntu-bionic
 
 VOLUME /var/log/nullmailer
+VOLUME /var/spool/nullmailer
 
 ENV ADMINADDR=
 ENV REMOTES=
-ENV MAILTO=
 
 RUN apt-get update -q -q && \
   apt-get install nullmailer --no-install-recommends --yes --force-yes && \
