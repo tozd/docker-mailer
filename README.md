@@ -7,11 +7,19 @@ Available as:
 - [`tozd/mailer`](https://hub.docker.com/r/tozd/mailer)
 - [`registry.gitlab.com/tozd/docker/mailer`](https://gitlab.com/tozd/docker/mailer/container_registry)
 
-## Image hierarchy
+## Image inheritance
 
 [`tozd/base`](https://gitlab.com/tozd/docker/base) ← [`tozd/runit`](https://gitlab.com/tozd/docker/runit) ← `tozd/mailer`
 
 See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
+
+## Tags
+
+- `ubuntu-trusty`: nullmailer 1.11
+- `ubuntu-xenial`: nullmailer 1.13
+- `ubuntu-bionic`: nullmailer 2.1
+- `ubuntu-focal`: nullmailer 2.2
+- `ubuntu-jammy`: nullmailer 2.2
 
 ## Volumes
 
