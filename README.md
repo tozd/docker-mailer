@@ -23,8 +23,8 @@ See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
 
 ## Volumes
 
-- `/var/log/nullmailer`: log files
-- `/var/spool/nullmailer`: work files (e.g., queue), persist this volume to not lose state
+- `/var/log/nullmailer`: Log files.
+- `/var/spool/nullmailer`: Work files (e.g., queue). Persist this volume to not lose state.
 
 ## Variables
 
