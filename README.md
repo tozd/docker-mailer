@@ -34,3 +34,8 @@ See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
 ## Description
 
 Image with a simple e-mailing out of the container using [nullmailer](http://untroubled.org/nullmailer/).
+
+## GitHub mirror
+
+There is also a [read-only GitHub mirror available](https://github.com/tozd/docker-mailer),
+if you need to fork the project there.
