@@ -1,10 +1,11 @@
-FROM registry.gitlab.com/tozd/docker/runit:ubuntu-xenial
+FROM registry.gitlab.com/tozd/docker/dinit:ubuntu-xenial
 
 VOLUME /var/log/nullmailer
 VOLUME /var/spool/nullmailer
 
 ENV ADMINADDR=
 ENV REMOTES=
+ENV LOG_TO_STDOUT=0
 
 RUN apt-get update -q -q && \
   apt-get install nullmailer --no-install-recommends --yes --force-yes && \

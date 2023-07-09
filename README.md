@@ -9,7 +9,7 @@ Available as:
 
 ## Image inheritance
 
-[`tozd/base`](https://gitlab.com/tozd/docker/base) ← [`tozd/runit`](https://gitlab.com/tozd/docker/runit) ← `tozd/mailer`
+[`tozd/base`](https://gitlab.com/tozd/docker/base) ← [`tozd/dinit`](https://gitlab.com/tozd/docker/dinit) ← `tozd/mailer`
 
 See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
 
@@ -23,13 +23,14 @@ See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
 
 ## Volumes
 
-- `/var/log/nullmailer`: Log files.
+- `/var/log/nullmailer`: Log files when `LOG_TO_STDOUT` is not set to `1`.
 - `/var/spool/nullmailer`: Work files (e.g., queue). Persist this volume to not lose state.
 
 ## Variables
 
 - `ADMINADDR`: If set, all e-mails to system users inside a container are send to this address.
 - `REMOTES`: E-mail relay server the container should be using to send e-mails.
+- `LOG_TO_STDOUT`: If set to `1` output logs to stdout (retrievable using `docker logs`) instead to `/var/log/nullmailer`.
 
 ## Description
 
