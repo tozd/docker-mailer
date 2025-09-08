@@ -46,7 +46,7 @@ docker run -d --name test --network testnet -e LOG_TO_STDOUT=1 -e REMOTES=mailho
 cleanup_docker=1
 
 echo "Running mailhog Docker image"
-docker run -d --name mailhog --network testnet -p 8025:8025 mailhog/mailhog:v1.0.1 -hostname mailhog -smtp-bind-addr :25
+docker run -d --name mailhog --network testnet -p 8025:8025 --platform linux/amd64 mailhog/mailhog:v1.0.1 -hostname mailhog -smtp-bind-addr :25
 cleanup_mailhog=1
 
 echo "Sleeping"

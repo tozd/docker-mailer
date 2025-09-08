@@ -22,6 +22,11 @@ See also [`tozd/nginx-mailer`](https://gitlab.com/tozd/docker/nginx-mailer).
 - `ubuntu-jammy`: nullmailer 2.2
 - `ubuntu-noble`: nullmailer 2.2
 
+## Architectures
+
+- `amd64`
+- `arm64`
+
 ## Volumes
 
 - `/var/log/nullmailer`: Log files when `LOG_TO_STDOUT` is not set to `1`.
